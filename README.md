@@ -31,5 +31,20 @@
    - 在频域（cube经过2+1维傅里叶变换）使用多普勒自适应滤波器，利用 "运动频率差异" 而非 "幅度差异" 来区分目标与噪声。
    - 同时预测多帧的目标。
 
-  
-  
+- **Semi-Supervised Multiview Prototype Learning With Motion Reconstruction for Moving Infrared Small Target Detection**（S2MVP）  
+  论文：IEEE Trans. on Geoscience and Remote Sensing (TGRS 2025)  
+  代码：https://github.com/UESTC-nnLab/S2MVP
+
+  网络图：  
+  <img width="909" height="431" alt="image" src="https://github.com/user-attachments/assets/a07069a9-73fa-446a-a079-7239b82d877b" />  
+  蓝色是推理路线，整个架构是训练路线。
+
+  测试数据集：DAUB， ITSDT-15K, IRDST（boundingbox）.
+
+  概述：为了解决有标注数据少和标注耗费大量人力的问题，创建了一种半监督的训练方式，教师网络（少量有标注数据训练过的）和学生网络相互学习。
+
+  特点：
+  - Extractor利用了ResNet50的预训练模型。
+  - BMP改良了ConvGRU利用时序信息提取运动特征。
+  - APF自适应过滤教师网络预测的伪标签，提高标签质量。
+  - Pm存储目标特征模板作为“知识库”，通过未标注数据持续更新进化。
