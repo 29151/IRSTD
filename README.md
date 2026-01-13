@@ -50,14 +50,24 @@
   - Pm存储目标特征模板作为“知识库”，通过未标注数据持续更新进化。
 
 - **SeqCSIST: Sequential Closely-Spaced Infrared Small Target Unmixing -2025**  
-  论文：https://xplorestaging.ieee.org/document/11080063
+  论文：https://xplorestaging.ieee.org/document/11080063  
   代码：https://github.com/GrokCV/SeqCSIST
-
+  
+  网络图：
+  <img width="1158" height="609" alt="image" src="https://github.com/user-attachments/assets/93c5c8a3-0141-45d1-a51f-0fbed518face" />
+  
   创新：
     - 提出了新的检测任务名为sequential CSIST unmixing，目的是解决多目标近距离时发生重叠在成像系统上呈现模糊斑块难以区分的问题，拓展了SIRST任务的定义。
     - 创建了适配新任务的数据集：SeqCSIST，https://pan.baidu.com/s/1_sxGh5oFQ8-3RpUUeMN2Mg?pwd=kxe9
     - 提出了适配新任务的检测方法：DeRefNet
-  
-网络图：
-<img width="1158" height="609" alt="image" src="https://github.com/user-attachments/assets/93c5c8a3-0141-45d1-a51f-0fbed518face" />
 
+- **Toward Dense Moving Infrared Small Target Detection: New Datasets and Baseline -2024**  
+  论文：[https://xplorestaging.ieee.org/document/11080063](https://ieeexplore.ieee.org/document/10636251)  
+  代码：[https://github.com/GrokCV/SeqCSIST](https://github.com/UESTC-nnLab/DMIST)
+  
+  网络图：
+  <img width="1274" height="481" alt="image" src="https://github.com/user-attachments/assets/30d266de-1caf-4cf0-b9d9-d1cef7091bc8" />
+  
+  创新：
+    - 为了解决密集目标检测的任务，合成了两个密集目标的数据集。
+    - 提出了LASNet来评估两个新数据集。（SST网络改良版）
