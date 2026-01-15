@@ -71,3 +71,15 @@
   创新：  
   - 为了解决密集目标检测的任务，合成了两个密集目标的数据集。  
   - 提出了LASNet来评估两个新数据集。（SST网络改良版）  
+
+### 6、 **A New Motion Feature-Enhanced Multiframe Spatial–Temporal Infrared Target Detection Network -2025**  
+  论文：https://ieeexplore.ieee.org/document/11145128  
+  代码：https://github.com/lifenghong/MFE-Net  
+
+  MFE-Net网络图：
+  <img width="1054" height="552" alt="image" src="https://github.com/user-attachments/assets/1bd517d8-1e31-4115-a6af-b23d46d0c5b6" />
+
+  创新：  
+  - 旨在解决卫星图象和移动背景下的红外小目标检测，为此合成了新的数据集：MIRSat-QL
+  - 在低分辨率特征图中计算光流对齐所有分辨率的特征，抑制背景移动的干扰。
+  - 新的深浅特征融合模块AGFF
