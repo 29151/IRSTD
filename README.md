@@ -83,3 +83,11 @@
   - 旨在解决卫星图象和移动背景下的红外小目标检测，为此合成了新的数据集：MIRSat-QL
   - 在低分辨率特征图中计算光流对齐所有分辨率的特征，抑制背景移动的干扰。
   - 新的深浅特征融合模块AGFF
+
+### 7、 **Enhancing Infrared Small Target Detection: A Saliency-Guided Multi-Task Learning Approach -2025**  
+  论文：https://ieeexplore.ieee.org/abstract/document/10844059
+
+  Light-SGMTLM网络图：  
+  <img width="1423" height="551" alt="image" src="https://github.com/user-attachments/assets/347f3c92-7a38-43a4-8741-10ce7ebcd4be" />  
+
+  
