@@ -9,7 +9,7 @@
   网络图：
   <img width="1652" height="373" alt="image" src="https://github.com/user-attachments/assets/06c812a4-f559-4ed2-bd2f-c8681853ddc1" />
 
-  测试数据集：sequential IRSTS（分割）
+  实验数据集：sequential IRSTS（分割）
 
   个人总结：使用提示图片（已知mask）提取红外小目标在经过SAM Encoder的特征，使用该特征匹配目标图片的特征，找到目标所在位置的中心点。将该中心点作为提示投入SAM输出分割结果。
 
@@ -23,7 +23,7 @@
   网络图：
   <img width="1261" height="802" alt="image" src="https://github.com/user-attachments/assets/fdfb528e-d242-4b03-a533-2b521ebae739" />
 
-  测试数据集：AntiUAV, InfraredUAV, and UAVSwarm（boundingbox）
+  实验数据集：AntiUAV, InfraredUAV, and UAVSwarm（boundingbox）
 
   特点：
    - 利用立方体式编码对序列数据进行一步式检测，避免了大部分方法两步检测序列数据的限制。
@@ -39,7 +39,7 @@
   <img width="909" height="431" alt="image" src="https://github.com/user-attachments/assets/a07069a9-73fa-446a-a079-7239b82d877b" />  
   蓝色是推理路线，整个架构是训练路线。
 
-  测试数据集：DAUB， ITSDT-15K, IRDST（boundingbox）.
+  实验数据集：DAUB， ITSDT-15K, IRDST（boundingbox）.
 
   个人总结：为了解决有标注数据少和标注耗费大量人力的问题，创建了一种半监督的训练方式，教师网络（少量有标注数据训练过的）和学生网络相互学习。
 
@@ -55,6 +55,8 @@
   
   网络图：
   <img width="1158" height="609" alt="image" src="https://github.com/user-attachments/assets/93c5c8a3-0141-45d1-a51f-0fbed518face" />
+
+  实验数据集：SeqCSIST
   
   创新：  
   - 提出了新的检测任务名为sequential CSIST unmixing，目的是解决多目标近距离时发生重叠在成像系统上呈现模糊斑块难以区分的问题，拓展了SIRST任务的定义。  
@@ -67,6 +69,8 @@
   
   网络图：
   <img width="1274" height="481" alt="image" src="https://github.com/user-attachments/assets/30d266de-1caf-4cf0-b9d9-d1cef7091bc8" />
+
+  实验数据集：DMIST-60，DMIST-100
   
   创新：  
   - 为了解决密集目标检测的任务，合成了两个密集目标的数据集。  
@@ -79,6 +83,8 @@
   MFE-Net网络图：
   <img width="1054" height="552" alt="image" src="https://github.com/user-attachments/assets/1bd517d8-1e31-4115-a6af-b23d46d0c5b6" />
 
+  实验数据集：MIRSat-QL  
+
   创新：  
   - 旨在解决卫星图象和移动背景下的红外小目标检测，为此合成了新的数据集：MIRSat-QL
   - 在低分辨率特征图中计算光流对齐所有分辨率的特征，抑制背景移动的干扰。
@@ -89,6 +95,8 @@
 
   Light-SGMTLM网络图：  
   <img width="1423" height="551" alt="image" src="https://github.com/user-attachments/assets/347f3c92-7a38-43a4-8741-10ce7ebcd4be" />  
+
+  实验数据集： Small-ExtIRShip（来源于GL-Light-NLDF），Small-SSDD（来源于SSDD），IHAST ，IRDST， NUAA-SIRST，IRSTD-1k  
 
   特点：  
   - 多任务同时学习：目标检测和分割。
