@@ -13,7 +13,7 @@
 
   个人总结：使用提示图片（已知mask）提取红外小目标在经过SAM Encoder的特征，使用该特征匹配目标图片的特征，找到目标所在位置的中心点。将该中心点作为提示投入SAM输出分割结果。
 
-  特点：
+  特色：
    - 不需要单独训练，使用SAM的训练模型。
    - 输入是带有已知mask的提示图片和目标图片
 
@@ -25,7 +25,7 @@
 
   实验数据集：AntiUAV, InfraredUAV, and UAVSwarm（boundingbox）
 
-  特点：
+  特色：
    - 利用立方体式编码对序列数据进行一步式检测，避免了大部分方法两步检测序列数据的限制。
    - 使用可变size的patch-embeding解决了标准Vision Transformer的 "固定尺寸块划分" 与小目标检测的矛盾。
    - 在频域（cube经过2+1维傅里叶变换）使用多普勒自适应滤波器，利用 "运动频率差异" 而非 "幅度差异" 来区分目标与噪声。
@@ -43,7 +43,7 @@
 
   个人总结：为了解决有标注数据少和标注耗费大量人力的问题，创建了一种半监督的训练方式，教师网络（少量有标注数据训练过的）和学生网络相互学习。
 
-  特点：
+  特色：
   - Extractor利用了ResNet50的预训练模型。
   - BMP改良了ConvGRU利用时序信息提取运动特征。
   - APF自适应过滤教师网络预测的伪标签，提高标签质量。
@@ -58,7 +58,7 @@
 
   实验数据集：SeqCSIST
   
-  创新：  
+  特色：  
   - 提出了新的检测任务名为sequential CSIST unmixing，目的是解决多目标近距离时发生重叠在成像系统上呈现模糊斑块难以区分的问题，拓展了SIRST任务的定义。  
   - 创建了适配新任务的数据集：SeqCSIST，https://pan.baidu.com/s/1_sxGh5oFQ8-3RpUUeMN2Mg?pwd=kxe9  
   - 提出了适配新任务的检测方法：DeRefNet  
@@ -72,7 +72,7 @@
 
   实验数据集：DMIST-60，DMIST-100
   
-  创新：  
+  特色：  
   - 为了解决密集目标检测的任务，合成了两个密集目标的数据集。  
   - 提出了LASNet来评估两个新数据集。（SST网络改良版）  
 
@@ -85,7 +85,7 @@
 
   实验数据集：MIRSat-QL  
 
-  创新：  
+  特色：  
   - 旨在解决卫星图象和移动背景下的红外小目标检测，为此合成了新的数据集：MIRSat-QL
   - 在低分辨率特征图中计算光流对齐所有分辨率的特征，抑制背景移动的干扰。
   - 新的深浅特征融合模块AGFF
@@ -98,8 +98,47 @@
 
   实验数据集： Small-ExtIRShip（来源于GL-Light-NLDF），Small-SSDD（来源于SSDD），IHAST ，IRDST， NUAA-SIRST，IRSTD-1k  
 
-  特点：  
+  特色：  
   - 多任务同时学习：目标检测和分割。
   - 注重与深层特征和浅层特征的融合。
   - backbone中的SIWD模块使用1x3和3x1的卷积替代3x3的卷积，保证感受野的同时降低了参数量。
   
+### 8、 **Direction-Coded Temporal U-Shape Module for Multiframe Infrared Small Target Detection -2025**  
+  论文：https://ieeexplore.ieee.org/document/10321723  
+  代码：https://github.com/TinaLRJ/Multi-frame-infrared-small-target-detection-DTUM
+
+  DTUM模块网络图：
+  <img width="936" height="303" alt="image" src="https://github.com/user-attachments/assets/73067fc1-20c6-44e9-88b1-452dcef817b6" />
+
+  实验数据集：NUDT-MIRSDT
+
+  特色：  
+  - 提出了时序模块DTUM，即插即用。
+  - 合成了SNR较低的红外小目标运动数据集：NUDT-MIRSDT
+
+### 9、 **LMAFormer: Local Motion Aware Transformer for Small Moving Infrared Target Detection -2025**  
+  论文：https://ieeexplore.ieee.org/document/10758760  
+  代码：https://github.com/lifier/LMAFormer  
+
+  LMAFormer网络图：
+  <img width="1619" height="787" alt="image" src="https://github.com/user-attachments/assets/eadf83d5-2d23-42d3-96f3-266e77d70d3d" />
+
+  实验数据集：NUDT-MIRSDT, IRDST，TSIRMT  
+
+  特色：  
+  - 合成了背景运动的序列数据集：TSIRMT
+  - 提出了运动感知特征提取模块（MAFEM）
+  - 提出了MJQM 方法，提高对运动背景的建模能力
+
+### 10、 **Infrared Small Target Detection in Satellite Videos:A New Dataset and A Novel Recurrent Feature Refinement Framework -2025**  
+  论文：https://arxiv.org/abs/2409.12448  
+  代码：https://github.com/XinyiYing/RFR
+
+  RFR网络图：
+  <img width="1285" height="449" alt="image" src="https://github.com/user-attachments/assets/d8b39318-8ad3-4505-825e-d9fc6e5b48c2" />
+
+  实验数据集： IRSatVideo-LEO
+
+  特色：
+  - 合成了卫星背景的红外运动目标数据集： IRSatVideo-LEO
+  - RFR充分利用长期时间依赖性，轻松与单帧方法结合
