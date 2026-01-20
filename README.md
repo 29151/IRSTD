@@ -90,4 +90,8 @@
   Light-SGMTLM网络图：  
   <img width="1423" height="551" alt="image" src="https://github.com/user-attachments/assets/347f3c92-7a38-43a4-8741-10ce7ebcd4be" />  
 
+  特点：  
+  - 多任务同时学习：目标检测和分割。
+  - 注重与深层特征和浅层特征的融合。
+  - backbone中的SIWD模块使用1x3和3x1的卷积替代3x3的卷积，保证感受野的同时降低了参数量。
   
