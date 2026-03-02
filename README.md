@@ -142,3 +142,15 @@
   特色：
   - 合成了卫星背景的红外运动目标数据集： IRSatVideo-LEO
   - RFR充分利用长期时间依赖性，轻松与单帧方法结合
+
+### 11、 **Infrared Small Target Detection via Multi-Path Deep Conduction -2025**  
+  论文：https://ieeexplore.ieee.org/document/11210177
+
+  MPDCNet网络图：
+  <img width="1277" height="725" alt="image" src="https://github.com/user-attachments/assets/a5aeb5ff-7592-4b23-b107-c2bbd958d53b" />  
+
+  实验数据集：DSAT，SIATD
+
+  特色：  
+  - 三路分支提取特征：空间特征、振幅、相位，之后再融合。
+  - 融合和解码过程使用了大量SSM（SS2D），长距离捕捉信息，提取全局特征。
