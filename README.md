@@ -154,3 +154,12 @@
   特色：  
   - 三路分支提取特征：空间特征、振幅、相位，之后再融合。
   - 融合和解码过程使用了大量SSM（SS2D），长距离捕捉信息，提取全局特征。
+
+### 12、 **Infrared Small Target Detection Method Based on High–Low-Frequency Semantic Reconstruction -2024**  
+  论文：https://ieeexplore.ieee.org/document/10599184  
+
+  HLSR-net网络图：
+  <img width="1299" height="537" alt="image" src="https://github.com/user-attachments/assets/885358d1-9015-4632-8053-d8a9295d2736" />
+
+  特色：
+  - 在频域分别对高频部分和低频部分通过u型网络进行重建，增强目标特征，抑制背景。
