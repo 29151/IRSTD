@@ -163,3 +163,16 @@
 
   特色：
   - 在频域分别对高频部分和低频部分通过u型网络进行重建，增强目标特征，抑制背景。
+
+### 13、 **DCSDNet: A Dual-Stream Cooperative Sensing Detection Network for Infrared Small Targets -2026**    
+  论文：https://ieeexplore.ieee.org/abstract/document/11224770  
+
+  DCSDNet网络图：
+  <img width="1291" height="557" alt="image" src="https://github.com/user-attachments/assets/26efe057-95dd-4c40-91ed-5ca8608cdcbf" />
+
+  实验数据集：VEDAI-IR, NUAA-SIRST, IRSTD-1K
+
+  特色：
+  - 密集分组特征学习（DGFL）模块，用于从红外小目标中提取多层次特征。
+  - 精炼特征融合瓶颈（RFFB）模块。该模块通过动态关注关键区域，实现了精细化的特征融合
+  - 重新思考了现有模型中特征金字塔结构的必要性，并舍弃了这一范式。开发了协同感知主干网络（FHB），以增强特征提取能力，同时减轻特征稀释和错位风险。
