@@ -176,3 +176,11 @@
   - 密集分组特征学习（DGFL）模块，用于从红外小目标中提取多层次特征。
   - 精炼特征融合瓶颈（RFFB）模块。该模块通过动态关注关键区域，实现了精细化的特征融合
   - 重新思考了现有模型中特征金字塔结构的必要性，并舍弃了这一范式。开发了协同感知主干网络（FHB），以增强特征提取能力，同时减轻特征稀释和错位风险。
+
+### 14、 **DCCS-Det: Directional Context and Cross-Scale-Aware Detector for Infrared Small Target -2026**  
+  论文：https://ieeexplore.ieee.org/document/11305185  
+
+  DCCS-Det网络图：
+  
+
+  
