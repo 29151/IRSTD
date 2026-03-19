@@ -181,6 +181,12 @@
   论文：https://ieeexplore.ieee.org/document/11305185  
 
   DCCS-Det网络图：
-  
+  <img width="1054" height="663" alt="image" src="https://github.com/user-attachments/assets/79b27981-cc6e-4a94-b712-e33a188b08c7" />
 
+  实验数据集：
+  IRSTD-1K, NUAA-SIRST, SIRST-Aug
+
+  特色：  
+  - 双分支提取特征，辅助分支使用DSE Block（内含ss2d）提取上下文信息。
+  - LaSEA模块，采用跨尺度特征提取和随机池化采样策略，增强引导解码器信息融合。
   
