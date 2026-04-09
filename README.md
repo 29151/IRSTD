@@ -190,3 +190,7 @@
   - 双分支提取特征，辅助分支使用DSE Block（内含ss2d）提取上下文信息。
   - LaSEA模块，采用跨尺度特征提取和随机池化采样策略，增强引导解码器信息融合。
   
+### 15、 **MDAFNet: Multiscale Differential Edge and Adaptive Frequency Guided Network for Infrared Small Target Detection -2026**  
+  论文：https://ieeexplore.ieee.org/document/11303211  
+  MDAFNet网络图：
+  <img width="1299" height="616" alt="image" src="https://github.com/user-attachments/assets/c74f91ad-a903-4235-a72a-832ed159c64a" />
