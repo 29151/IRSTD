@@ -194,3 +194,10 @@
   论文：https://ieeexplore.ieee.org/document/11303211  
   MDAFNet网络图：
   <img width="1299" height="616" alt="image" src="https://github.com/user-attachments/assets/c74f91ad-a903-4235-a72a-832ed159c64a" />
+
+  实验数据集：
+  IRSTD-1K, NUAA-SIRST, and SIRST-Aug  
+
+  特色：  
+  - MSDE module作为独立的辅助分支，保证了边缘完整性。
+  - DAFE module利用双分支减弱高频噪声。
