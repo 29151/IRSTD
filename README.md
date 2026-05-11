@@ -202,3 +202,17 @@
   特色：  
   - MSDE module作为独立的辅助分支，保证了边缘完整性。
   - DAFE module利用双分支减弱高频噪声。
+
+### 16、 **GSFANet: Global Spatial–Frequency Attention Network for Infrared Small Target Detection -2025**  
+  论文：https://ieeexplore.ieee.org/document/11133697
+  GSFANet网络图：
+  <img width="1269" height="650" alt="image" src="https://github.com/user-attachments/assets/7a1ee608-460f-466c-b35d-79615ab1f6db" />
+
+  实验数据集：  
+  SIRST, NUDT-SIRST , and IRSTD-1k 
+
+  特色：
+  - 基于核函数和门控机制的全局空间–频率注意力机制
+  - 参数化小波下采样（PWD）模块
+  - 基于频率解耦的自适应特征融合模块
+
