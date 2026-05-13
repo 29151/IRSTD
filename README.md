@@ -216,3 +216,14 @@
   - 参数化小波下采样（PWD）模块
   - 基于频率解耦的自适应特征融合模块（AdaPD）
 
+### （遥感小目标）17、 **Multiscale Gaussian Attention Mechanism for Tiny-Object Detection in Remote Sensing Images -2025**
+  论文：Multiscale Gaussian Attention Mechanism for Tiny-Object Detection in Remote Sensing Images
+  代码：https://github.com/cszzshi/MGAM
+  网络框架图(ResNet+MGAM)：
+  <img width="1094" height="435" alt="image" src="https://github.com/user-attachments/assets/1384dd13-6d6f-4286-8321-0a9fbb402dd5" />
+
+  特色：
+  - 即插即用，可置于各个主流模型的stage之后。
+  - 在特征提取和注意力机制过程中不使用卷积或线性层。尽管 引入了一些额外的计算，但由于其复杂度低，对 GFLOPs 和模型大小几乎没有影响，只会略微降低模型的训练速度。此外，骨干网络的预训练权重可以直接使用。
+  - MFEM来捕捉不同感受野的特征。然后使用GAM计算这些特征的通道和空间注意力。最后根据来自基础模块的原始特征图与注意力特征图之间的差异，为来自不同尺度的注意力特征图分配不同的权重。
+  
