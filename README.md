@@ -226,4 +226,13 @@
   - 即插即用，可置于各个主流模型的stage之后。
   - 在特征提取和注意力机制过程中不使用卷积或线性层。尽管 引入了一些额外的计算，但由于其复杂度低，对 GFLOPs 和模型大小几乎没有影响，只会略微降低模型的训练速度。此外，骨干网络的预训练权重可以直接使用。
   - MFEM来捕捉不同感受野的特征。然后使用GAM计算这些特征的通道和空间注意力。最后根据来自基础模块的原始特征图与注意力特征图之间的差异，为来自不同尺度的注意力特征图分配不同的权重。
-  
+
+### 18、 **ADSUNet: Accumulation-difference-based Siamese U-Net for inter-frame infrared dim and small target detection -2025**
+  论文：10.1016/j.patcog.2025.111942  
+  代码：https://github.com/zhanglw882/ADSUNet  
+  ADUSNet网络图：
+  <img width="1113" height="885" alt="image" src="https://github.com/user-attachments/assets/1edaf579-0295-4406-b30f-e7e9bd4d314f" />
+
+  特色：
+  - 采用了共享权重的孪生网络提取邻近两帧图像的多尺度空域显著性特征。
+  - 利用了时序信息：在U型网络的跳连接中设计了累积-差分注意力模块融合邻帧信息，通过帧间空域显著性特征与帧间的差异特征的融合，并对融合后的特征引入了注意力机制，进一步提高了红外小目标帧间时空特征的提取能力；
