@@ -236,3 +236,13 @@
   特色：
   - 采用了共享权重的孪生网络提取邻近两帧图像的多尺度空域显著性特征。
   - 利用了时序信息：在U型网络的跳连接中设计了累积-差分注意力模块融合邻帧信息，通过帧间空域显著性特征与帧间的差异特征的融合，并对融合后的特征引入了注意力机制，进一步提高了红外小目标帧间时空特征的提取能力；
+
+### 19、 **Infrared dim tiny-sized target detection based on feature fusion -2025**
+  论文：https://www.nature.com/articles/s41598-025-88956-8  
+
+  网络图：
+  <img width="1246" height="508" alt="image" src="https://github.com/user-attachments/assets/6d6402d3-d0d7-4a09-aec8-1a779a7f6c66" />
+
+  特色：
+  -  DODTE模块通过计算相邻各方向的像素差异生成位置信息特征图，以增强后续小目标位置信息。
+  -  RBPL模块使用金字塔的形式提取形状信息。
