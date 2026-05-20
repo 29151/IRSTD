@@ -243,6 +243,20 @@
   网络图：
   <img width="1246" height="508" alt="image" src="https://github.com/user-attachments/assets/6d6402d3-d0d7-4a09-aec8-1a779a7f6c66" />
 
+  实验数据集：NUDT-SIRST , and IRSTD-1k
+
   特色：
   -  DODTE模块通过计算相邻各方向的像素差异生成位置信息特征图，以增强后续小目标位置信息。
   -  RBPL模块使用金字塔的形式提取形状信息，最后生成简略检测图（channel=1）.
+
+### 20、 **Infrared Dim Small Target Detection Algorithm Based on Adaptive Attention Transformer Network -2025**
+  论文：https://doi.org/10.1007/s12204-025-2823-7
+
+  网络图：
+  <img width="1113" height="684" alt="image" src="https://github.com/user-attachments/assets/7df1a560-4374-45da-bef6-6783f699c086" />
+
+  实验数据集：IRSTD-1K, NUAA-SIRST
+
+  特色：
+  - 改进注意力机制：使用小型网络判断出哪些点更值得注意，计算注意力时Q和K不变，V会根据之前筛选的点做稀疏化，在保证前提的情况下，降低了计算量。
+  - GCA融合模块，对低级特征使用空间非局部全局注意力，对高级特征图使用通道的非局部全局注意力，拼接融合。
