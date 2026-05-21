@@ -193,6 +193,7 @@
   
 ### 15、 **MDAFNet: Multiscale Differential Edge and Adaptive Frequency Guided Network for Infrared Small Target Detection -2026**  
   论文：https://ieeexplore.ieee.org/document/11303211  
+  
   MDAFNet网络图：
   <img width="1299" height="616" alt="image" src="https://github.com/user-attachments/assets/c74f91ad-a903-4235-a72a-832ed159c64a" />
 
@@ -204,7 +205,8 @@
   - DAFE module利用双分支减弱高频噪声。
 
 ### 16、 **GSFANet: Global Spatial–Frequency Attention Network for Infrared Small Target Detection -2025**  
-  论文：https://ieeexplore.ieee.org/document/11133697
+  论文：https://ieeexplore.ieee.org/document/11133697  
+  
   GSFANet网络图：
   <img width="1269" height="650" alt="image" src="https://github.com/user-attachments/assets/7a1ee608-460f-466c-b35d-79615ab1f6db" />
 
@@ -217,8 +219,9 @@
   - 基于频率解耦的自适应特征融合模块（AdaPD）
 
 ### （遥感小目标）17、 **Multiscale Gaussian Attention Mechanism for Tiny-Object Detection in Remote Sensing Images -2025**
-  论文：Multiscale Gaussian Attention Mechanism for Tiny-Object Detection in Remote Sensing Images
-  代码：https://github.com/cszzshi/MGAM
+  论文：Multiscale Gaussian Attention Mechanism for Tiny-Object Detection in Remote Sensing Images  
+  代码：https://github.com/cszzshi/MGAM  
+  
   网络框架图(ResNet+MGAM)：
   <img width="1094" height="435" alt="image" src="https://github.com/user-attachments/assets/1384dd13-6d6f-4286-8321-0a9fbb402dd5" />
 
@@ -230,6 +233,7 @@
 ### 18、 **ADSUNet: Accumulation-difference-based Siamese U-Net for inter-frame infrared dim and small target detection -2025**
   论文：10.1016/j.patcog.2025.111942  
   代码：https://github.com/zhanglw882/ADSUNet  
+  
   ADUSNet网络图：
   <img width="1113" height="885" alt="image" src="https://github.com/user-attachments/assets/1edaf579-0295-4406-b30f-e7e9bd4d314f" />
 
