@@ -264,3 +264,8 @@
   特色：
   - 改进注意力机制：使用小型网络判断出哪些点更值得注意，计算注意力时Q和K不变，V会根据之前筛选的点做稀疏化，在保证前提的情况下，降低了计算量。
   - GCA融合模块，对低级特征使用空间非局部全局注意力，对高级特征图使用通道的非局部全局注意力，拼接融合。
+
+### 21、 **SP-KAN: Sparse-sine perception Kolmogorov–Arnold networks for infrared small target detection -ISPRS 2026**  
+  论文：https://www.sciencedirect.com/science/article/pii/S0924271626000705
+
+  
