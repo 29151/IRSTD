@@ -13,19 +13,20 @@
 
   个人总结：使用提示图片（已知mask）提取红外小目标在经过SAM Encoder的特征，使用该特征匹配目标图片的特征，找到目标所在位置的中心点。将该中心点作为提示投入SAM输出分割结果。
 
-  特色：
+  创新：
    - 不需要单独训练，使用SAM的训练模型。
    - 输入是带有已知mask的提示图片和目标图片
 
 ### 2、**OSFormer: One-Step Transformer for Infrared Video Small Object Detection -2025**  
   论文：https://ieeexplore.ieee.org/document/11130659
+  
 
   网络图：
   <img width="1261" height="802" alt="image" src="https://github.com/user-attachments/assets/fdfb528e-d242-4b03-a533-2b521ebae739" />
 
   实验数据集：AntiUAV, InfraredUAV, and UAVSwarm（boundingbox）
 
-  特色：
+  创新：
    - 利用立方体式编码对序列数据进行一步式检测，避免了大部分方法两步检测序列数据的限制。
    - 使用可变size的patch-embeding解决了标准Vision Transformer的 "固定尺寸块划分" 与小目标检测的矛盾。
    - 在频域（cube经过2+1维傅里叶变换）使用多普勒自适应滤波器，利用 "运动频率差异" 而非 "幅度差异" 来区分目标与噪声。
@@ -43,7 +44,7 @@
 
   个人总结：为了解决有标注数据少和标注耗费大量人力的问题，创建了一种半监督的训练方式，教师网络（少量有标注数据训练过的）和学生网络相互学习。
 
-  特色：
+  创新：
   - Extractor利用了ResNet50的预训练模型。
   - BMP改良了ConvGRU利用时序信息提取运动特征。
   - APF自适应过滤教师网络预测的伪标签，提高标签质量。
@@ -58,7 +59,7 @@
 
   实验数据集：SeqCSIST
   
-  特色：  
+  创新：  
   - 提出了新的检测任务名为sequential CSIST unmixing，目的是解决多目标近距离时发生重叠在成像系统上呈现模糊斑块难以区分的问题，拓展了SIRST任务的定义。  
   - 创建了适配新任务的数据集：SeqCSIST，https://pan.baidu.com/s/1_sxGh5oFQ8-3RpUUeMN2Mg?pwd=kxe9  
   - 提出了适配新任务的检测方法：DeRefNet  
@@ -72,7 +73,7 @@
 
   实验数据集：DMIST-60，DMIST-100
   
-  特色：  
+  创新：  
   - 为了解决密集目标检测的任务，合成了两个密集目标的数据集。  
   - 提出了LASNet来评估两个新数据集。（SST网络改良版）  
 
@@ -85,7 +86,7 @@
 
   实验数据集：MIRSat-QL  
 
-  特色：  
+  创新：  
   - 旨在解决卫星图象和移动背景下的红外小目标检测，为此合成了新的数据集：MIRSat-QL
   - 在低分辨率特征图中计算光流对齐所有分辨率的特征，抑制背景移动的干扰。
   - 新的深浅特征融合模块AGFF
@@ -98,7 +99,7 @@
 
   实验数据集： Small-ExtIRShip（来源于GL-Light-NLDF），Small-SSDD（来源于SSDD），IHAST ，IRDST， NUAA-SIRST，IRSTD-1k  
 
-  特色：  
+  创新：  
   - 多任务同时学习：目标检测和分割。
   - 注重与深层特征和浅层特征的融合。
   - backbone中的SIWD模块使用1x3和3x1的卷积替代3x3的卷积，保证感受野的同时降低了参数量。
@@ -112,7 +113,7 @@
 
   实验数据集：NUDT-MIRSDT
 
-  特色：  
+  创新：  
   - 提出了时序模块DTUM，即插即用。
   - 合成了SNR较低的红外小目标运动数据集：NUDT-MIRSDT
 
@@ -125,7 +126,7 @@
 
   实验数据集：NUDT-MIRSDT, IRDST，TSIRMT  
 
-  特色：  
+  创新：  
   - 合成了背景运动的序列数据集：TSIRMT
   - 提出了运动感知特征提取模块（MAFEM）
   - 提出了MJQM 方法，提高对运动背景的建模能力
@@ -139,7 +140,7 @@
 
   实验数据集： IRSatVideo-LEO
 
-  特色：
+  创新：
   - 合成了卫星背景的红外运动目标数据集： IRSatVideo-LEO
   - RFR充分利用长期时间依赖性，轻松与单帧方法结合
 
@@ -151,7 +152,7 @@
 
   实验数据集：DSAT，SIATD
 
-  特色：  
+  创新：  
   - 三路分支提取特征：空间特征、振幅、相位，之后再融合。
   - 融合和解码过程使用了大量SSM（SS2D），长距离捕捉信息，提取全局特征。
 
@@ -161,7 +162,7 @@
   HLSR-net网络图：
   <img width="1299" height="537" alt="image" src="https://github.com/user-attachments/assets/885358d1-9015-4632-8053-d8a9295d2736" />
 
-  特色：
+  创新：
   - 在频域分别对高频部分和低频部分通过u型网络进行重建，增强目标特征，抑制背景。
 
 ### 13、 **DCSDNet: A Dual-Stream Cooperative Sensing Detection Network for Infrared Small Targets -2026**    
@@ -172,7 +173,7 @@
 
   实验数据集：VEDAI-IR, NUAA-SIRST, IRSTD-1K
 
-  特色：
+  创新：
   - 密集分组特征学习（DGFL）模块，用于从红外小目标中提取多层次特征。
   - 精炼特征融合瓶颈（RFFB）模块。该模块通过动态关注关键区域，实现了精细化的特征融合
   - 重新思考了现有模型中特征金字塔结构的必要性，并舍弃了这一范式。开发了协同感知主干网络（FHB），以增强特征提取能力，同时减轻特征稀释和错位风险。
@@ -187,7 +188,7 @@
   实验数据集：
   IRSTD-1K, NUAA-SIRST, SIRST-Aug
 
-  特色：  
+  创新：  
   - 双分支提取特征，辅助分支使用DSE Block（内含ss2d）提取上下文信息。
   - LaSEA模块，采用跨尺度特征提取和随机池化采样策略，增强引导解码器信息融合。
   
@@ -200,7 +201,7 @@
   实验数据集：
   IRSTD-1K, NUAA-SIRST, and SIRST-Aug  
 
-  特色：  
+  创新：  
   - MSDE module作为独立的辅助分支，保证了边缘完整性。
   - DAFE module利用双分支减弱高频噪声。
 
@@ -213,7 +214,7 @@
   实验数据集：  
   SIRST, NUDT-SIRST , and IRSTD-1k 
 
-  特色：
+  创新：
   - 基于核函数和门控机制的全局空间–频率注意力机制（HGKA）
   - 参数化小波下采样（PWD）模块
   - 基于频率解耦的自适应特征融合模块（AdaPD）
@@ -225,7 +226,7 @@
   网络框架图(ResNet+MGAM)：
   <img width="1094" height="435" alt="image" src="https://github.com/user-attachments/assets/1384dd13-6d6f-4286-8321-0a9fbb402dd5" />
 
-  特色：
+  创新：
   - 即插即用，可置于各个主流模型的stage之后。
   - 在特征提取和注意力机制过程中不使用卷积或线性层。尽管 引入了一些额外的计算，但由于其复杂度低，对 GFLOPs 和模型大小几乎没有影响，只会略微降低模型的训练速度。此外，骨干网络的预训练权重可以直接使用。
   - MFEM来捕捉不同感受野的特征。然后使用GAM计算这些特征的通道和空间注意力。最后根据来自基础模块的原始特征图与注意力特征图之间的差异，为来自不同尺度的注意力特征图分配不同的权重。
@@ -237,7 +238,7 @@
   ADUSNet网络图：
   <img width="1113" height="885" alt="image" src="https://github.com/user-attachments/assets/1edaf579-0295-4406-b30f-e7e9bd4d314f" />
 
-  特色：
+  创新：
   - 采用了共享权重的孪生网络提取邻近两帧图像的多尺度空域显著性特征。
   - 利用了时序信息：在U型网络的跳连接中设计了累积-差分注意力模块融合邻帧信息，通过帧间空域显著性特征与帧间的差异特征的融合，并对融合后的特征引入了注意力机制，进一步提高了红外小目标帧间时空特征的提取能力；
 
@@ -249,7 +250,7 @@
 
   实验数据集：NUDT-SIRST , and IRSTD-1k
 
-  特色：
+  创新：
   -  DODTE模块通过计算相邻各方向的像素差异生成位置信息特征图，以增强后续小目标位置信息。
   -  RBPL模块使用金字塔的形式提取形状信息，最后生成简略检测图（channel=1）.
 
@@ -261,11 +262,20 @@
 
   实验数据集：IRSTD-1K, NUAA-SIRST
 
-  特色：
+  创新：
   - 改进注意力机制：使用小型网络判断出哪些点更值得注意，计算注意力时Q和K不变，V会根据之前筛选的点做稀疏化，在保证前提的情况下，降低了计算量。
   - GCA融合模块，对低级特征使用空间非局部全局注意力，对高级特征图使用通道的非局部全局注意力，拼接融合。
 
 ### 21、 **SP-KAN: Sparse-sine perception Kolmogorov–Arnold networks for infrared small target detection -ISPRS 2026**  
   论文：https://www.sciencedirect.com/science/article/pii/S0924271626000705
+  代码： https://github.com/xdFai  
 
+  网络图：
+  <img width="1499" height="765" alt="image" src="https://github.com/user-attachments/assets/0a4f700b-a775-4902-bd02-79d5896a5c81" />
+
+  实验数据集：IRSTD-1K, NUAA-SIRST，SIRST3
+
+  创新：  
+  - 提出 Sparse-Sine KAN 层（SPKAL），将普通 KAN 中的 B-spline 样条基函数替换为局部稀疏正弦基函数，使特征在不同区间获得更细粒度的非线性响应，更适合建模红外弱小目标的稀疏和局部显著特性。
+  - PCM模块：将 SPKAL 的跨通道非线性建模与深度可分离卷积的局部空间建模结合，实现通道关系与空间结构的互补增强，提高目标与复杂背景的区分能力。
   
