@@ -292,3 +292,15 @@
   - 文本使用更粗帮且统一的背景和目标描述，在频域指导目标和背景的分割。
   - 在文本维度构建loss函数，监督网络学习。
   
+### 23、 **ADGNet： Asymmetric Dual-text Guided Network for Infrared Small Target Detection**  
+  论文：https://arxiv.org/abs/2609.00853  
+  代码：https://github.com/iLearn-Lab/MM26-ADGNet  
+
+  网络图：
+  <img width="1331" height="511" alt="image" src="https://github.com/user-attachments/assets/47d9f4f0-177b-455c-bc2d-a5b8810c0d7b" />
+  
+  实验数据集：IRSTD-1K，SIRST，NUDT-SIRST 
+
+  创新：
+  - 将场景文本和目标文本分隔开，分别用于场景抑制和目标增强两个支线，场景文本因图而异，目标文本粗帮统一。
+  - 构建模块自适应调节使用两条支线增强响应。
