@@ -279,3 +279,16 @@
   - 提出 Sparse-Sine KAN 层（SPKAL），将普通 KAN 中的 B-spline 样条基函数替换为局部稀疏正弦基函数，使特征在不同区间获得更细粒度的非线性响应，更适合建模红外弱小目标的稀疏和局部显著特性。
   - PCM模块：将 SPKAL 的跨通道非线性建模与深度可分离卷积的局部空间建模结合，实现通道关系与空间结构的互补增强，提高目标与复杂背景的区分能力。
   
+### 22、 **DGNet: Dual-knowledge Guided Network for Infrared Small Target Detection**  
+  论文：https://arxiv.org/abs/2609.00666  
+  代码：https://github.com/iLearn-Lab/MM26-DGNet
+
+  网络图：
+  <img width="1160" height="561" alt="image" src="https://github.com/user-attachments/assets/f2a81f48-5f7d-47a0-8477-f7c6868ac711" />
+
+  实验数据集：IRSTD-1K，SIRST，NUDT-SIRST  
+
+  创新：
+  - 文本使用更粗帮且统一的背景和目标描述，在频域指导目标和背景的分割。
+  - 在文本维度构建loss函数，监督网络学习。
+  
