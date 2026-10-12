@@ -304,3 +304,16 @@
   创新：
   - 将场景文本和目标文本分隔开，分别用于场景抑制和目标增强两个支线，场景文本因图而异，目标文本粗帮统一。
   - 构建模块自适应调节使用两条支线增强响应。
+
+### 24、 **CHAL:Causal-guided Hierarchical Anomaly-aware Learning for Moving Infrared Small Target Detection**  
+  论文：https://openaccess.thecvf.com/content/CVPR2026/papers/Duan_CHAL_Causal-guided_Hierarchical_Anomaly-aware_Learning_for_Moving_Infrared_Small_Target_CVPR_2026_paper.pdf  
+  代码：https://github.com/UESTC-nnLab/CHAL
+
+  网络图：
+  <img width="944" height="561" alt="image" src="https://github.com/user-attachments/assets/12435d19-2bb4-4e22-aba5-3ac0157c01c7" />
+
+  实验数据集： DAUB-H, NUDT-MIRSDT, and IRDST-R  
+
+  创新：
+  - 不再直接强化微弱目标特征，而是将运动红外小目标视为背景中的异常，通过学习正常背景规律来间接突出目标。
+  - 利用 SNF 建模背景的时空演化规律并生成背景表征，再通过 HAL 从外观和运动层面逐级挖掘异常，提高弱小运动目标与复杂背景的区分能力。
