@@ -318,7 +318,7 @@
   - 不再直接强化微弱目标特征，而是将运动红外小目标视为背景中的异常，通过学习正常背景规律来间接突出目标。
   - 利用 SNF 建模背景的时空演化规律并生成背景表征，再通过 HAL 从外观和运动层面逐级挖掘异常，提高弱小运动目标与复杂背景的区分能力。
 
-### 25、 **Learning Global Dynamic Query for Large-Motion Infrared Small Target Detection**  
+### 25、 **Learning Global Dynamic Query for Large-Motion Infrared Small Target Detection** -2026  
   论文：https://ieeexplore.ieee.org/document/11363482  
   代码：https://github.com/dengfa02/DQAligner_MIRSTD  
 
@@ -331,3 +331,10 @@
   - 双向共享运动注意力（CMI）：通过共享跨帧关联矩阵，双向建模帧内与帧间长程依赖，增强目标与背景的运动区分能力。  
   - 动态感受野金字塔对齐（DFDA）：利用多尺度可变形卷积与粗到细对齐策略，自适应建模复杂大位移，实现目标特征的精确对齐。  
   - 动态类别查询记忆（CQM）：通过时序迭代更新目标查询，结合全局搜索与广义残差约束，稳定偏移学习并增强跨帧目标语义一致性。  
+
+### 26、**MIST: A Benchmark and Baseline for Multi-Frame Infrared Small Target Detection in Complex Motion** -2026 TIP  
+  论文：https://ieeexplore.ieee.org/document/11511399  
+  代码：https://github.com/GR-ray/MIST  
+
+  网络图：  
+  <img width="1389" height="509" alt="image" src="https://github.com/user-attachments/assets/0d646ca7-3444-4369-ac9a-88f364b5217f" />
