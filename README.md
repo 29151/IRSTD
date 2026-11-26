@@ -337,4 +337,11 @@
   代码：https://github.com/GR-ray/MIST  
 
   网络图：  
-  <img width="1389" height="509" alt="image" src="https://github.com/user-attachments/assets/0d646ca7-3444-4369-ac9a-88f364b5217f" />
+  <img width="1389" height="509" alt="image" src="https://github.com/user-attachments/assets/0d646ca7-3444-4369-ac9a-88f364b5217f" />  
+
+  实验数据集： NUDT-MIRSDT，MIST
+
+  创新：  
+  - MIST数据集构建： 构建面向低信噪比、快速及不规则运动场景的大规模多帧红外弱小目标检测数据集，弥补现有数据集运动模式单一的不足。  
+  - SNCB运动补偿模块： 结合多尺度邻域匹配与分组移位，扩大特征匹配范围，实现复杂运动下的高效隐式运动补偿。  
+  - PDD渐进式信息蒸馏： 基于信息瓶颈理论，结合通道与空间注意力及充分性损失，逐层过滤背景冗余，保留目标判别信息。  
